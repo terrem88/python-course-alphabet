@@ -80,3 +80,21 @@ But still could not connect with python code
 subl /etc/postgresql/9.6/main/pg_hba.conf
 ```
 and change `local all all peer` to `local all all password`
+
+
+If you still have problems with installing pyscopg2
+
+try to do next
+
+```
+ls -la /usr/lib/postgresql/
+# look on version of postgress
+
+export PATH=/usr/lib/postgresql/your_version_here/bin/:$PATH
+
+```
+
+
+```.env
+sudo apt install build-essential
+```

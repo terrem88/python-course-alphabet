@@ -24,10 +24,15 @@ Same information for those one who does not like English (yet)
 
 https://timeweb.com/ru/community/articles/kak-ustanovit-postgresql-na-ubuntu-18-04-1 
 
+Links for windows
+
+https://www.w3resource.com/PostgreSQL/connect-to-postgresql-database.php
+
 > - sudo -u postgres psql
 > - postgres=# create database cursor_db;
 > - postgres=# create user cursor with encrypted password 'very_secret_password';
 > - postgres=# grant all privileges on database cursor_db to cursor;
+> - postgres=# ALTER USER cursor WITH SUPERUSER;
 > - postgres=# \q;
   
 

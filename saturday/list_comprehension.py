@@ -15,13 +15,30 @@ members = [
             {'age': 83, 'name': 'Homer'}
         ]
 
+
 # simple example
 members_age = [member['age'] for member in members]
 members_name = [member['name'] for member in members]
 members_full = [member for member in members]
 members_something_important = [len(member) for member in members]
 
+
+# Example with if
+members_with_age_older_than_40 = [member for member in members if member['age']]
+
+
+# Example if and else
+members_filter = [member if member['age'] > 40 else None for member in members]
+
 print("members_age", members_age)
 print("members_name", members_name)
 print("members_full", members_full)
 print("members_something_important", members_something_important)
+
+
+print("\n")
+
+print("members_with_age_older_than_40", members_with_age_older_than_40)
+
+print("\n")
+print("members_filter ", members_filter)

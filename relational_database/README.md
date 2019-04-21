@@ -79,8 +79,15 @@ But still could not connect with python code
 ```
 subl /etc/postgresql/9.6/main/pg_hba.conf
 ```
+Your version of psql could be another, look in dir /etc/postgresql/
+
 and change `local all all peer` to `local all all password`
 
+Then you need to restart your postgres service
+
+```.env
+sudo service postgresql restart
+```
 
 If you still have problems with installing pyscopg2
 
